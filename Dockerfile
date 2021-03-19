@@ -1,6 +1,6 @@
-FROM archlinux/base-devel:latest
+FROM archlinux/base:latest
 
-RUN pacman -Syu --noconfirm namcap
+RUN pacman -Syu --noconfirm base-devel namcap
 
 RUN useradd -m builder
 
