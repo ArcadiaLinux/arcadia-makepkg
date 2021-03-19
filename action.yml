@@ -1,0 +1,13 @@
+# action.yml
+name: 'Arcadia PKGBUILDs'
+description: 'Runs makepkg'
+inputs:
+  path:
+    description: "Path to directory containing PKGBUILD file"
+    required: true
+    default: ""
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.path }}
