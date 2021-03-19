@@ -11,3 +11,7 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.path }}
+
+branding:
+  icon: 'activity'
+  color: 'white'
