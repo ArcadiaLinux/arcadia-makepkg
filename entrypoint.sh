@@ -14,7 +14,11 @@ chown -R builder "$PWD"
 
 echo "Running makepkg"
 
-su --login builder --command='makepkg -fs ./PKGBUILD'
+ls -al
+
+su --login builder --command='makepkg -fs'
+
+ls -al
 
 echo "Running namcap"
 
